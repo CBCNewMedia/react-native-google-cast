@@ -13,13 +13,13 @@ Pod::Spec.new do |s|
 
   s.source        = { :git => 'https://github.com/react-native-google-cast/react-native-google-cast.git', :tag => s.version.to_s }
   s.source_files  = 'RNGoogleCast/**/*.{h,m}'
-  s.default_subspec = 'Default'
+  s.default_subspec = 'NoBluetooth'
 
   s.dependency      'React'
 
   s.subspec 'Default' do |ss|
     ss.dependency "#{package['name']}/RNGoogleCast"
-    ss.dependency 'google-cast-sdk', '<= 4.3.0'
+    ss.dependency 'google-cast-sdk', '<= 4.4.4'
   end
 
   s.subspec 'NoBluetooth' do |ss|
