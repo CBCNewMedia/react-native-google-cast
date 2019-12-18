@@ -1,8 +1,9 @@
 require 'json'
 package = JSON.parse(File.read(File.join(__dir__, '../', 'package.json')))
+package_name = "react-native-google-cast"
 
 Pod::Spec.new do |s|
-  s.name          = package['name']
+  s.name          = package_name
   s.version       = package['version']
   s.summary       = package['description']
 
@@ -18,17 +19,17 @@ Pod::Spec.new do |s|
   s.dependency      'React'
 
   s.subspec 'Default' do |ss|
-    ss.dependency "#{package['name']}/RNGoogleCast"
+    ss.dependency "#{package_name}/RNGoogleCast"
     ss.dependency 'google-cast-sdk', '<= 4.4.4'
   end
 
   s.subspec 'NoBluetooth' do |ss|
-    ss.dependency "#{package['name']}/RNGoogleCast"
+    ss.dependency "#{package_name}/RNGoogleCast"
     ss.dependency 'google-cast-sdk-no-bluetooth'
   end
 
   s.subspec 'Manual' do |ss|
-    ss.dependency "#{package['name']}/RNGoogleCast"
+    ss.dependency "#{package_name}/RNGoogleCast"
   end
 
   s.subspec 'RNGoogleCast' do |ss|
