@@ -1,6 +1,6 @@
 {
   "name": "@cbcnewmedia/react-native-google-cast",
-  "version": "3.2.3",
+  "version": "3.2.4",
   "description": "React Native wrapper for the Google Cast SDK for iOS and Android",
   "main": "index.js",
   "types": "index.d.ts",
@@ -15,6 +15,10 @@
     {
       "name": "Charlie L",
       "email": "carlyeah@me.com"
+    },
+    {
+      "name": "Martin Jaycy Halum",
+      "email": "martinjaycyhalum@gmail.com"
     }
   ],
   "license": "MIT",
@@ -35,8 +39,8 @@
     "prop-types": "^15.6.0"
   },
   "peerDependencies": {
-    "react": ">=15.1 || >=16.0.0",
-    "react-native": ">=0.40"
+    "react": "*",
+    "react-native": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
